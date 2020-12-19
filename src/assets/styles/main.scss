@@ -1,0 +1,77 @@
+/**
+* Incluir tailwind en el CSS
+*/
+
+@tailwind base;
+@tailwind components;
+
+.btn-nav {
+  @apply border-white border-2 text-center text-gray-400 px-3 py-2 font-medium ;
+}
+
+.btn-nav:hover {
+  @apply bg-green-600 ;
+}
+
+.btn-footer {
+  @apply no-underline w-auto px-4 py-4 rounded-xl bg-link-footer text-yellow-link ;
+}
+
+.btn-footer:hover {
+  @apply text-blue-700;
+}
+
+.flex_element {
+  @apply flex justify-around justify-items-center ;
+}
+
+.size_container {
+  @apply bg-flex-group w-45% text-center my-4 mx-auto ;
+}
+
+.link_desc {
+  @apply text-6xl text-yellow-link underline ;
+}
+
+.desc_groups {
+  @apply text-3xl py-4 px-4 text-justify ;
+}
+
+.input_form {
+  @apply placeholder-black w-full h-10 py-2 px-3 rounded text-base text-black ;
+}
+
+@tailwind utilities;
+
+/**
+ * Import variables
+ */
+
+@import "variables";
+
+/**
+ * Import npm dependencies
+ * see: https://en.parceljs.org/module_resolution.html
+ * see commented examples below
+ */
+@import "@fortawesome/fontawesome-free/css/all.css";
+
+// @import "some-node-module";
+// @import "@some-company/some-node-module";
+
+/**
+ * Import layouts
+ * It's a best practice to use a partial for each page
+ */
+
+@import "layouts/poster";
+@import "layouts/info";
+@import "layouts/responsive";
+
+/**
+ * Do NOT include anything else in this file!
+ */
+
+html {
+  font-size: 1.2vw;
+}

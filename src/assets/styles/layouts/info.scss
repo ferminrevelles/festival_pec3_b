@@ -1,0 +1,140 @@
+/* Define el cuerpo del HTML para la web de INFO */
+
+.main-box__slider {
+  position: relative;
+  left: 1.25%;
+  margin: 2% auto;
+}
+
+.main-box__imagen {
+  position: relative;
+  left: 2.5%;
+}
+
+.main-box__slider--styleimg {
+  width: 95%;
+  height: 35em;
+}
+
+.main-box__description {
+  width: 90%;
+  margin: 1% auto;
+  text-align: justify;
+}
+
+.jumbotron__title {
+  color: red;
+  font-weight: bold;
+}
+
+.jumbotron__subtitle {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.main-box__program {
+  width: 75%;
+  margin: 2% auto;
+}
+
+.main-box__program-title {
+  text-align: center;
+  background-color: black;
+  color: white;
+  width: auto;
+  font-size: 3em;
+  font-family: 'Ma Shan Zheng', cursive;
+}
+
+.main-box__program-list {
+  list-style-type: none;
+  margin: 2% 10%;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2em;
+  color: yellow;
+  background-color: rgb(73, 70, 70);
+  padding: 0 2%;
+}
+
+.main-box__program-list--second {
+  font-family: $font-family-googlefonts-pangolin;
+  font-size: 0.7em;
+  margin: 0 10%;
+  color: rgb(37, 207, 114);
+}
+
+.margin-icon {
+  width: 5%;
+  margin-right: 3%;
+}
+
+.main-box__services {
+  width: 90%;
+  margin: 2% auto;
+  text-align: justify;
+  background-color: rgb(21, 84, 167);
+  padding: 1% 5%;
+  font-family: $font-family-googlefonts-pangolin;
+}
+
+.main-box__services-title {
+  text-align: center;
+  color: rgb(204, 175, 175);
+  font-size: 3em;
+}
+
+.main-box__services-description {
+  color: white;
+  font-size: 3em;
+}
+
+.main-box__eslogan {
+  margin: 1% auto;
+  width: 85%;
+  height: auto;
+  background-color: rgb(99, 190, 126);
+}
+
+.main-box__eslogan-description {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 2.5em;
+  text-decoration: underline;
+  color: rgb(255, 255, 255);
+  margin-left: 5%;
+}
+
+.main-box__eslogan-text {
+  font-size: 1.9em;
+  margin: 2%;
+  text-align: justify;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.main-box__eslogan-autor {
+  text-align: right;
+  color: blue;
+  font-size: 1.5em;
+  margin: 2% 2%;
+}
+
+/* Navagadores que soporta FLEX */
+@media screen and (min-width: 750px) {
+  @supports (display: flex) {
+    .main-box__services {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 1% auto;
+    }
+
+    .main-box__services-title {
+      width: 30%;
+    }
+
+    .main-box__services-description {
+      width: 60%;
+      margin: 0 5%;
+      border-left: solid 2px;
+    }
+  }
+}
